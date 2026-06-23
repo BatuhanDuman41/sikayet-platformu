@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { StatCard } from "@/components/stat-card";
@@ -16,6 +17,12 @@ export default function AdminPage() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-950">Admin Dashboard</h1>
           <p className="mt-2 text-slate-600">Kullanıcı, firma, şikayet ve moderasyon yönetimi.</p>
+          <Link
+            href="/admin/kayitlar"
+            className="mt-4 inline-flex rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white"
+          >
+            Yeni Kayıtları Gör / Excel İndir
+          </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-4">
           <StatCard label="Bekleyen Moderasyon" value="48" detail="inceleme gerekli" />

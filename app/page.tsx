@@ -27,7 +27,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/kayit"
+                  href="/kayit?next=/sikayet-yaz"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-brand-700"
                 >
                   Şikayet Oluştur
